@@ -77,6 +77,7 @@ const Home: NextPage = () => {
       throw new Error(response.statusText);
     }
 
+    console.log('generate接口调用成功',response)
     // This data is a ReadableStream
     const data = response.body;
     if (!data) {
